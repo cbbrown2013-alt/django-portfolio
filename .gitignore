@@ -1,0 +1,5 @@
+djvenv/
+.vscode/
+djvenv/
+__pycache__/
+.DS_Store
