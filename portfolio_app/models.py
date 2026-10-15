@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models import ForeignKey
 
 class Student(models.Model):
     MAJOR = (
@@ -17,3 +18,27 @@ class Student(models.Model):
 
     def __str__(self):
         return self.name
+
+class Portfolio(models.Model):
+    student = models.OneToOneField( Student, on_delete=models.CASCADE)
+    title = models.CharField(max_length=200)
+    contact_email = models.EmailField()
+    is_active = models.BooleanField(default=True)
+    about = models.TextField(blank=True)
+
+    def __str__(self):
+        return self.title
+
+    def get_absolute_url(self):
+        return f"/portfolio/{self.id}/"
+
+class Project(models.Model):
+    project = models.ForeignKey(Portfolio, on_delete=models.CASCADE)
+    title = models.CharField(max_length=200)
+    description = models.TextField(blank=True)
+
+    def __str__(self):
+        return self.title
+    
+    def get_absolute_url(self):
+        return f"/portfolio/{self.project.id}/project/{self.id}/"
