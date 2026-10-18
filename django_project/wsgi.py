@@ -1,3 +1,5 @@
+#This file contains the WSGI configuration for the Django project. WSGI (Web Server Gateway Interface) is a specification that allows web servers to communicate with Python web applications. The WSGI application callable defined in this file serves as the entry point for the web server to interact with the Django application.
+
 """
 WSGI config for django_project project.
 

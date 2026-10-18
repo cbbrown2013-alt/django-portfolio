@@ -1,3 +1,5 @@
+#This file specifies intentionally untracked files that Git should ignore. It includes directories and files that are generated during development, such as virtual environments, IDE configurations, compiled Python files, and temporary files. By ignoring these files, the repository remains clean and focused on the source code and essential project files.
+
 djvenv/
 .vscode/
 __pycache__/
