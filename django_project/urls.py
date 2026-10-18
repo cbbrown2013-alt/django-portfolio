@@ -1,3 +1,5 @@
+#This file contains the URL configuration for the Django project. It defines the URL patterns that map URLs to views, allowing users to access different parts of the application through specific URLs. The urlpatterns list includes a path for the Django admin interface, which is accessible at the '/admin/' URL.
+
 """
 URL configuration for django_project project.
 

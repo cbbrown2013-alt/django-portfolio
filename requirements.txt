@@ -1,3 +1,5 @@
+#This file lists the dependencies required for the Django project to run. It specifies the versions of the 'asgiref', 'Django', and 'sqlparse' packages that are compatible with the project. These dependencies can be installed using pip to ensure that the project has all necessary libraries for proper functionality.
+
 asgiref==3.12.1
 Django==6.1.1
 sqlparse==0.6.0
