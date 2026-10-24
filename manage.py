@@ -1,3 +1,5 @@
+#This file is the main entry point for Django's command-line utility, which is used for administrative tasks such as running the development server, applying migrations, and managing the application. It sets the default settings module for the Django project and executes commands passed via the command line.
+
 #!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
 import os

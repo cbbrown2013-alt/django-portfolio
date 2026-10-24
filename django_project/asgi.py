@@ -1,3 +1,5 @@
+#This file is required for Django to recognize this directory as a Python package. It can be left empty, but it must be present in order for Django to import the package correctly.
+
 """
 ASGI config for django_project project.
 
