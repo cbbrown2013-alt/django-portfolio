@@ -1,0 +1,13 @@
+{% extends "portfolio_app/base_template.html" %} {% block content %}
+
+<h2>Students</h2>
+
+<ul>
+  {% for student in students %}
+  <a href="{% url 'student-detail' student.pk %}"> {{ student.name }} </a>
+  {% empty %}
+  <p>No students found.</p>
+  {% endfor %}
+</ul>
+
+{% endblock %}
