@@ -23,3 +23,7 @@ class StudentDetailView(DetailView):
     template_name = 'portfolio_app/student_detail.html'
     context_object_name = 'student'
 
+class PortfolioDetailView(DetailView):
+    model = Portfolio
+    template_name = 'portfolio_app/portfolio_detail.html'
+    context_object_name = 'portfolio'

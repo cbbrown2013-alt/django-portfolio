@@ -1,0 +1,14 @@
+{% extends "portfolio_app/base_template.html" %} {% block content %}
+
+<h2>{{ portfolio.title }}</h2>
+
+<p>About: {{ portfolio.about }}</p>
+<p>Email: {{ portfolio.contact_email }}</p>
+<p>Active: {{ portfolio.is_active }}</p>
+
+{% for project in portfolio.project_set.all %}
+<h2>{{ project.title }}</h2>
+<p>{{ project.description }}</p>
+{% empty %}
+<p>No projects in this portfolio yet.</p>
+{% endfor %} {% endblock %}
