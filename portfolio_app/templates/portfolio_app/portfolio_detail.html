@@ -11,4 +11,6 @@
 <p>{{ project.description }}</p>
 {% empty %}
 <p>No projects in this portfolio yet.</p>
-{% endfor %} {% endblock %}
+{% endfor %}
+<a href="{% url 'index' %}">Back to home</a>
+{% endblock %}

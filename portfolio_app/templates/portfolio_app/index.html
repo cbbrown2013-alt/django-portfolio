@@ -4,7 +4,11 @@
 
 <ul>
   {% for portfolio in active_portfolios %}
-  <li>{{ portfolio.title }}</li>
+  <li>
+    <a href="{% url 'portfolio-detail' portfolio.pk %}">
+      {{ portfolio.title }}
+    </a>
+  </li>
   {% empty %}
   <li>No active portfolios found.</li>
   {% endfor %}
